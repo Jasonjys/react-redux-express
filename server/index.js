@@ -1,6 +1,5 @@
 const express = require('express')
 const mongoose = require('mongoose')
-// const bodyParser = require('body-parser')
 const cookieSession = require('cookie-session')
 const passport = require('passport')
 const keys = require('./config/keys')
@@ -17,7 +16,6 @@ app.use(
   })
 )
 
-// app.use(bodyParser.json())
 app.use(passport.initialize())
 app.use(passport.session())
 
